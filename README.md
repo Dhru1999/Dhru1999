@@ -30,7 +30,7 @@ I'm transitioning from 2+ years of backend development (C# / .NET) into **Data E
 - **Questions answered:** Top revenue category, highest spending month, retention strategy effectiveness, churn vs. spend relationship
 - **Tools:** Google SQL (BigQuery), Looker Studio, Python/Pandas
 - **Key finding:** Electronics leads revenue; Loyalty Program is the most adopted retention strategy
-- 📎 [View Dashboard](https://lookerstudio.google.com/s/uhzC8y0oJ0w)
+- 📎 [View Dashboard](https://lookerstudio.google.com/s/uhzC8y0oJ0w) | [View Repo](https://github.com/Dhru1999/Sales-and-Customer-Report-Using-Looker-Studio)
 
 ---
 
@@ -56,8 +56,8 @@ I'm transitioning from 2+ years of backend development (C# / .NET) into **Data E
 
 ## 📫 Connect with me
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](#your-linkedin-url)
-[![Email](https://img.shields.io/badge/Email-Say_Hello-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:your@email.com)
+[![LinkedIn](https://www.linkedin.com/in/dhrupti-pambhar/)
+[![Email](dhrupti.pambhar1999@gmail.com)
 
 ---
 
