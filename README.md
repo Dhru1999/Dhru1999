@@ -56,8 +56,8 @@ I'm transitioning from 2+ years of backend development (C# / .NET) into **Data E
 
 ## 📫 Connect with me
 
-[![LinkedIn](https://www.linkedin.com/in/dhrupti-pambhar/)
-[![Email](dhrupti.pambhar1999@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dhrupti-pambhar/)
+[![Email](https://img.shields.io/badge/Email-Say_Hello-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:dhrupti.pambhar1999@gmail.com)
 
 ---
 
