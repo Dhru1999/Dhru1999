@@ -2,7 +2,7 @@
 
 **Backend Developer → Data Engineer** | Hamburg, Germany 🇩🇪
 
-I'm transitioning from 2+ years of backend development (C# / .NET) into **Data Engineering & Analytics**. Currently enrolled at **ReDI School of Digital Integration** in Hamburg, building real-world data projects and actively seeking Junior Data Engineer / Werkstudent roles.
+Data-focused professional with **2+ years** of backend engineering experience **(C#/.NET, PostgreSQL, SQL Server)**, now specialising in ** data analytics and engineering**. Currently enrolled full-time at ReDI School of Digital Integration Hamburg, building hands-on expertise in BigQuery/Google SQL, Python/Pandas, and Looker Studio, including end-to-end projects on real e-commerce datasets. My backend foundation means I don't just analyse data — I understand how it's stored, moved, and structured. I bring practical experience in SQL query optimisation, ETL logic, and relational database design, with a growing focus on cloud data tools and dashboarding.
 
 ---
 
