@@ -20,20 +20,6 @@ Data-focused professional with **2+ years** of backend engineering experience **
 ![Git](https://img.shields.io/badge/Git-GitHub-181717?style=flat-square&logo=github&logoColor=white)
 ![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
 
----
-
-## 📊 Featured Projects
-
-### 🛒 E-Commerce Sales Analysis — BigQuery + Looker Studio
-> Analysed 10,000+ customer transactions to uncover revenue patterns, churn risk, and spending behaviour.
-
-- **Questions answered:** Top revenue category, highest spending month, retention strategy effectiveness, churn vs. spend relationship
-- **Tools:** Google SQL (BigQuery), Looker Studio, Python/Pandas
-- **Key finding:** Electronics leads revenue; Loyalty Program is the most adopted retention strategy
-- 📎 [View Dashboard](https://lookerstudio.google.com/s/uhzC8y0oJ0w) | [View Repo](https://github.com/Dhru1999/Sales-and-Customer-Report-Using-Looker-Studio)
-
----
-
 ## 🎓 Education & Learning
 
 | Programme | Institution | Year |
