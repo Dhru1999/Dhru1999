@@ -54,19 +54,20 @@ Also on the changelog: led two Rebex server upgrades from compatibility testing 
 ### 🧭 Career, as a git graph
 
 ```mermaid
-gitGraph
+%%{init: {'gitGraph': {'mainBranchName': 'career'}}}%%
+gitGraph TB:
   commit id: "B.Sc. Computer Applications"
   commit id: "M.Sc. Computer Applications"
   branch casepoint
-  commit id: "Intern: led 10-person team"
-  commit id: "Associate Software Engineer"
+  commit id: "Intern, led 10 interns"
+  commit id: "Associate SWE"
   commit id: "Excellence Award 2023"
-  checkout main
+  checkout career
   merge casepoint id: "Moved to Hamburg"
   branch redi-school
   commit id: "Data Analytics 2026"
-  commit id: "AI/ML programme (now)"
-  checkout main
+  commit id: "AI/ML programme, now"
+  checkout career
   merge redi-school id: "Next: your team?" type: HIGHLIGHT
 ```
 
