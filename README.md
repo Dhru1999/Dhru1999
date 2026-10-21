@@ -24,7 +24,7 @@ var dhrupti = new Engineer
     Speaks     = ["English C1", "German B2",
                   "Gujarati", "Hindi"],
     LookingFor = "Backend, .NET or data/AI engineering"
-               + " roles in Germany",
+                   + "roles in Germany or Remote",
 };
 ```
 
