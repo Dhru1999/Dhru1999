@@ -54,7 +54,7 @@ Also on the changelog: led two Rebex server upgrades from compatibility testing 
 ### 🧭 Career, as a git graph
 
 ```mermaid
-%%{init: {'gitGraph': {'mainBranchName': 'career'}}}%%
+%%{init: {'gitGraph': {'mainBranchName': 'career', 'rotateCommitLabel': false}}}%%
 gitGraph TB:
   commit id: "B.Sc. Computer Applications"
   commit id: "M.Sc. Computer Applications"
