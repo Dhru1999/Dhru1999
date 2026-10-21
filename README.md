@@ -1,50 +1,104 @@
-# Hi, I'm Dhrupti 👋
+<h1 align="center">Hi, I'm Dhrupti</h1>
 
-**Backend Developer → Data Engineer** | Hamburg, Germany 🇩🇪
+<p align="center">
+  <b>Backend engineer who makes slow queries fast and messy data honest.</b><br>
+  C#/.NET by trade · Python, data and AI by choice · based in Hamburg
+</p>
 
-Software Engineer with **2+ years** of backend engineering experience **(C#/.NET, PostgreSQL, SQL Server)**, now specialising in **Data Analytics and Engineering**. Currently enrolled full-time at ReDI School of Digital Integration Hamburg, building hands-on expertise in BigQuery/Google SQL, Python/Pandas, and Looker Studio, including end-to-end projects on real e-commerce datasets. My backend foundation means I don't just analyse data — I understand how it's stored, moved, and structured. I bring practical experience in SQL query optimisation, ETL logic, and relational database design, with a growing focus on cloud data tools and dashboarding.
+<p align="center">
+  <a href="https://www.linkedin.com/in/dhrupti-pambhar/">LinkedIn</a> ·
+  <a href="mailto:dhrupti.pambhar1999@gmail.com">Email</a> ·
+  <a href="#-things-i-built">Projects</a>
+</p>
 
 ---
 
-## 🛠️ Tech Stack
+```csharp
+var dhrupti = new Engineer
+{
+    Role       = "Software Engineer · C#/.NET backend",
+    Experience = "2+ years at Casepoint (US LegalTech)",
+    Stack      = [".NET", "SQL Server", "PostgreSQL",
+                  "RabbitMQ", "Redis", "Elasticsearch"],
+    NowLearning = ["Machine learning", "LLM apps"],
+    Speaks     = ["English C1", "German B2",
+                  "Gujarati", "Hindi"],
+    LookingFor = "Backend, .NET or data/AI engineering"
+               + " roles in Germany",
+};
+```
 
-**Data & Analytics**
-![SQL](https://img.shields.io/badge/SQL-BigQuery-4285F4?style=flat-square&logo=googlebigquery&logoColor=white)
-![Python](https://img.shields.io/badge/Python-Pandas%20%7C%20NumPy-3776AB?style=flat-square&logo=python&logoColor=white)
-![Looker Studio](https://img.shields.io/badge/Looker_Studio-Dashboards-4285F4?style=flat-square&logo=google&logoColor=white)
+### 🔧 Release notes: two years of backend work
 
-**Backend (Previous)**
-![C#](https://img.shields.io/badge/C%23-.NET-512BD4?style=flat-square&logo=dotnet&logoColor=white)
+At Casepoint I worked in a 15-person Scrum team on a document platform that ingests, tags and archives **10+ GB of documents a day**. The parts I'm proudest of, written the way my team would read them:
 
-**Tools**
-![Git](https://img.shields.io/badge/Git-GitHub-181717?style=flat-square&logo=github&logoColor=white)
-![VS Code](https://img.shields.io/badge/VS_Code-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white)
+```diff
+- critical document query                      ~60 s
++ critical document query                      ~30 s    query plans + indexing
 
-## 🎓 Education & Learning
+- Elasticsearch search                        baseline
++ Elasticsearch search                    ~20% faster
 
-| Programme | Institution | Year |
+- frequent database calls                     baseline
++ frequent database calls                  15% fewer    Redis caching + RabbitMQ events
+
+- production defects                          baseline
++ production defects                    ~25% fewer    team result; I did defect analysis
+
+  SQL Server → PostgreSQL migration of a customer's data model
++ 0 rows lost · full traceability · 50%+ of the query surface moved
+```
+
+Also on the changelog: led two Rebex server upgrades from compatibility testing to production, led a 10-person intern team building a reporting & invoicing module (ASP.NET MVC 5, Blazor, PostgreSQL), and received the **Casepoint Excellence Award** (Oct 2023).
+
+### 🧭 Career, as a git graph
+
+```mermaid
+%%{init: {'gitGraph': {'mainBranchName': 'career', 'rotateCommitLabel': false}}}%%
+gitGraph TB:
+  commit id: "B.Sc. Computer Applications"
+  commit id: "M.Sc. Computer Applications"
+  branch casepoint
+  commit id: "Intern, led 10 interns"
+  commit id: "Associate SWE"
+  commit id: "Excellence Award 2023"
+  checkout career
+  merge casepoint id: "Moved to Hamburg"
+  branch redi-school
+  commit id: "Data Analytics 2026"
+  commit id: "AI/ML programme, now"
+  checkout career
+  merge redi-school id: "Next: your team?" type: HIGHLIGHT
+```
+
+### 🛠 Things I built
+
+| Project | The interesting part | Stack |
 |---|---|---|
-| Data Analytics | ReDI School of Digital Integration, Hamburg | 2026 |
-| B.Tech / Engineering | India | 2021 |
+| **[Job Application Follow-Up Assistant](https://github.com/Dhru1999/Auto-Follow-Up-Tool-Using-Claude-Code)** | Reads my Excel job tracker (even macro-enabled `.xlsm`), finds who is due a follow-up, drafts the email with the **Claude API** and sends it after I review it, then ticks one cell in the workbook without touching its formulas. Credentials stay encrypted per Windows user. | C# · .NET 9 · Claude API · Open XML · xUnit · GitHub Actions |
+| **[Smart Retail Data Platform](https://github.com/Dhru1999/smart-retail-data-platform)** | An ETL pipeline with one rule: **no row disappears quietly**. Every input row is either loaded or quarantined with a reason, and CI runs it twice against a real PostgreSQL container to prove it. | Python · pandas · SQLAlchemy · PostgreSQL · pytest |
+| **[Rooftop Solar Potential, Hamburg](https://github.com/Dhru1999/Renewable-Solar-Potential-Across-Hamburg-District-Analysis)** | Team project: joined **384,908 buildings** to 104 districts (99.9% matched) to find where Hamburg's rooftop solar capacity sits. I planned the project and built the Looker Studio dashboard. | Python · GeoPandas · Looker Studio |
+| **[Mental Health Signal](https://github.com/Dhru1999/Teen-Mental-Health-Estimator)** | My first ML model behind a real API: a scikit-learn pipeline served with FastAPI and a small web form. R² 0.88 on held-out data. A learning project, not a screening tool. | scikit-learn · FastAPI · JavaScript |
 
-**Currently learning:** Advanced SQL (window functions, CTEs), Python for data, BigQuery, Looker Studio, German (B1 level 🇩🇪)
+Smaller analytics work: [BigQuery SQL on an e-commerce dataset](https://github.com/Dhru1999/BigQuery-SQL-Analytics-thelook_ecommerce-) · [Sales & customer dashboard](https://github.com/Dhru1999/Sales-and-Customer-Report-Using-Looker-Studio) · [Social media & teen mental health EDA](https://github.com/Dhru1999/Social-Media-Impact-on-Teen-Mental-Health)
+
+### 🧰 Toolbox, sorted by honesty
+
+| | |
+|---|---|
+| **Shipped in production** | C#, ASP.NET MVC 5, .NET Core, REST / Web API, WPF, Blazor, SQL Server, PostgreSQL, RabbitMQ, Redis, Elasticsearch, Git, Azure Repos, Agile/Scrum |
+| **Built in projects** | Python, pandas, GeoPandas, SQLAlchemy, BigQuery, Looker Studio, Power BI, Claude API, FastAPI, pytest, GitHub Actions |
+| **Learning right now** | Machine learning (ReDI School AI/ML programme, 2026) |
+
+### 🎓 Education
+
+- **M.Sc. Computer Applications** — Veer Narmad South Gujarat University, Surat (2020–2022)
+- **B.Sc. Computer Applications** — Veer Narmad South Gujarat University, Surat (2017–2020)
+- **Data Analytics programme** — ReDI School of Digital Integration, Hamburg (2026)
 
 ---
 
-## 📍 About Me
-
-- 📌 Based in **Hamburg, Germany**
-- 🔍 Open to **Junior Data Engineer** and **Internship** roles in Hamburg
-- 🌱 Building my portfolio through ReDI School projects
-- 🗣️ Languages: English (fluent), Hindi (native), German (B1)
-
----
-
-## 📫 Connect with me
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/dhrupti-pambhar/)
-[![Email](https://img.shields.io/badge/Email-Say_Hello-EA4335?style=flat-square&logo=gmail&logoColor=white)](mailto:dhrupti.pambhar1999@gmail.com)
-
----
-
-*"Turning raw data into decisions — one query at a time."*
+<p align="center">
+  <i>Open to backend, .NET and data/AI engineering roles across Germany. Let's talk:</i><br>
+  <a href="https://www.linkedin.com/in/dhrupti-pambhar/">LinkedIn</a> · <a href="mailto:dhrupti.pambhar1999@gmail.com">dhrupti.pambhar1999@gmail.com</a>
+</p>
