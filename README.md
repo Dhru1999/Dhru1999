@@ -1,45 +1,103 @@
-## Dhrupti Pambhar
+<h1 align="center">Hi, I'm Dhrupti</h1>
 
-**Software engineer (C#/.NET backend) moving into data and AI engineering** · Hamburg, Germany
+<p align="center">
+  <b>Backend engineer who makes slow queries fast and messy data honest.</b><br>
+  C#/.NET by trade · Python, data and AI by choice · based in Hamburg
+</p>
 
-I spent about 2.5 years (including my internship) building backend features for a LegalTech product at Casepoint — C#, ASP.NET MVC 5 and .NET Core services, REST APIs and SQL Server / PostgreSQL. I hold a Master's degree in Computer Science. Since moving to Hamburg I have been training in data analytics and machine learning at ReDI School and building projects that combine the two: tested pipelines, analyses on real public data, and small tools that use LLM APIs.
+<p align="center">
+  <a href="https://www.linkedin.com/in/dhrupti-pambhar/">LinkedIn</a> ·
+  <a href="mailto:dhrupti.pambhar1999@gmail.com">Email</a> ·
+  <a href="#-things-i-built">Projects</a>
+</p>
 
-Open to **Software Engineer**, **C#/.NET Backend Developer** and **junior Data / AI Engineer** roles in Germany or elsewhere in Europe.
+---
 
-### Selected projects
+```csharp
+var dhrupti = new Engineer
+{
+    Role       = "Software Engineer · C#/.NET backend",
+    Experience = "2+ years at Casepoint (US LegalTech)",
+    Stack      = [".NET", "SQL Server", "PostgreSQL",
+                  "RabbitMQ", "Redis", "Elasticsearch"],
+    NowLearning = ["Machine learning", "LLM apps"],
+    Speaks     = ["English C1", "German B2",
+                  "Gujarati", "Hindi"],
+    LookingFor = "Backend, .NET or data/AI engineering"
+               + " roles in Germany",
+};
+```
 
-**[Job Application Follow-Up Assistant](https://github.com/Dhru1999/Auto-Follow-Up-Tool-Using-Claude-Code)** — C# · .NET 9 · WinForms · Claude API · Open XML
-Desktop tool that reads my Excel application tracker, finds applications that are due or overdue for a follow-up, drafts the email with the Claude Messages API and sends it via Gmail after review. Reads macro-enabled workbooks without Excel, writes back a single cell without touching formulas, and keeps credentials DPAPI-encrypted. Core logic lives in a dependency-free library with xUnit tests; CI builds the app on Windows.
+### 🔧 Release notes: two years of backend work
 
-**[Smart Retail Data Platform](https://github.com/Dhru1999/smart-retail-data-platform)** — Python · pandas · SQLAlchemy · PostgreSQL · GitHub Actions
-ETL pipeline built around one rule: every input row is either loaded or quarantined with a reason. Declarative schemas, a data-quality report per run, idempotent loads, and a CI job that runs the pipeline twice against a real PostgreSQL container and asserts the row counts.
+At Casepoint I worked in a 15-person Scrum team on a document platform that ingests, tags and archives **10+ GB of documents a day**. The parts I'm proudest of, written the way my team would read them:
 
-**[Rooftop Solar Potential Across Hamburg's Districts](https://github.com/Dhru1999/Renewable-Solar-Potential-Across-Hamburg-District-Analysis)** — Python · GeoPandas · Looker Studio · team project
-Spatial join of 384,908 buildings from Hamburg's official solar dataset to 104 districts (99.9 % assigned) to rank districts by capacity and solar readiness. Wilhelmsburg and Rahlstedt lead with about 207 and 197 MWp of modelled rooftop capacity. I planned the project and built the dashboard; the workflow is also available as a tested script.
+```diff
+- critical document query                      ~60 s
++ critical document query                      ~30 s    query plans + indexing
 
-**[Mental Health Signal](https://github.com/Dhru1999/Teen-Mental-Health-Estimator)** — scikit-learn · FastAPI · JavaScript · learning project
-Regression model (preprocessing + random forest pipeline) estimating a self-reported mental-health score from social-media and lifestyle habits, served through a validated FastAPI endpoint with a small web front end. R² 0.88 on the held-out test set of a 5,000-row public dataset. An educational exercise, not a screening tool.
+- Elasticsearch search                        baseline
++ Elasticsearch search                    ~20% faster
 
-More analytics work: [SQL on BigQuery (thelook_ecommerce)](https://github.com/Dhru1999/BigQuery-SQL-Analytics-thelook_ecommerce-) · [Sales & customer dashboard in Looker Studio](https://github.com/Dhru1999/Sales-and-Customer-Report-Using-Looker-Studio) · [Social media and teen mental health EDA](https://github.com/Dhru1999/Social-Media-Impact-on-Teen-Mental-Health)
+- frequent database calls                     baseline
++ frequent database calls                  15% fewer    Redis caching + RabbitMQ events
 
-### Skills
+- production defects                          baseline
++ production defects                    ~25% fewer    team result; I did defect analysis
 
-| Area | Tools I have used in work or projects |
+  SQL Server → PostgreSQL migration of a customer's data model
++ 0 rows lost · full traceability · 50%+ of the query surface moved
+```
+
+Also on the changelog: led two Rebex server upgrades from compatibility testing to production, led a 10-person intern team building a reporting & invoicing module (ASP.NET MVC 5, Blazor, PostgreSQL), and received the **Casepoint Excellence Award** (Oct 2023).
+
+### 🧭 Career, as a git graph
+
+```mermaid
+gitGraph
+  commit id: "B.Sc. Computer Applications"
+  commit id: "M.Sc. Computer Applications"
+  branch casepoint
+  commit id: "Intern: led 10-person team"
+  commit id: "Associate Software Engineer"
+  commit id: "Excellence Award 2023"
+  checkout main
+  merge casepoint id: "Moved to Hamburg"
+  branch redi-school
+  commit id: "Data Analytics 2026"
+  commit id: "AI/ML programme (now)"
+  checkout main
+  merge redi-school id: "Next: your team?" type: HIGHLIGHT
+```
+
+### 🛠 Things I built
+
+| Project | The interesting part | Stack |
+|---|---|---|
+| **[Job Application Follow-Up Assistant](https://github.com/Dhru1999/Auto-Follow-Up-Tool-Using-Claude-Code)** | Reads my Excel job tracker (even macro-enabled `.xlsm`), finds who is due a follow-up, drafts the email with the **Claude API** and sends it after I review it, then ticks one cell in the workbook without touching its formulas. Credentials stay encrypted per Windows user. | C# · .NET 9 · Claude API · Open XML · xUnit · GitHub Actions |
+| **[Smart Retail Data Platform](https://github.com/Dhru1999/smart-retail-data-platform)** | An ETL pipeline with one rule: **no row disappears quietly**. Every input row is either loaded or quarantined with a reason, and CI runs it twice against a real PostgreSQL container to prove it. | Python · pandas · SQLAlchemy · PostgreSQL · pytest |
+| **[Rooftop Solar Potential, Hamburg](https://github.com/Dhru1999/Renewable-Solar-Potential-Across-Hamburg-District-Analysis)** | Team project: joined **384,908 buildings** to 104 districts (99.9% matched) to find where Hamburg's rooftop solar capacity sits. I planned the project and built the Looker Studio dashboard. | Python · GeoPandas · Looker Studio |
+| **[Mental Health Signal](https://github.com/Dhru1999/Teen-Mental-Health-Estimator)** | My first ML model behind a real API: a scikit-learn pipeline served with FastAPI and a small web form. R² 0.88 on held-out data. A learning project, not a screening tool. | scikit-learn · FastAPI · JavaScript |
+
+Smaller analytics work: [BigQuery SQL on an e-commerce dataset](https://github.com/Dhru1999/BigQuery-SQL-Analytics-thelook_ecommerce-) · [Sales & customer dashboard](https://github.com/Dhru1999/Sales-and-Customer-Report-Using-Looker-Studio) · [Social media & teen mental health EDA](https://github.com/Dhru1999/Social-Media-Impact-on-Teen-Mental-Health)
+
+### 🧰 Toolbox, sorted by honesty
+
+| | |
 |---|---|
-| Backend | C#, ASP.NET MVC 5, .NET Core / .NET 9, REST APIs, WinForms, xUnit |
-| Data stores | SQL Server, PostgreSQL, BigQuery (GoogleSQL); exposure to Redis, Elasticsearch, RabbitMQ |
-| Data | Python, pandas, GeoPandas, SQLAlchemy, pytest, Looker Studio, matplotlib |
-| ML / AI (learning) | scikit-learn pipelines, FastAPI model serving, Claude API |
-| Practices | Git, GitHub Actions, Agile teams |
+| **Shipped in production** | C#, ASP.NET MVC 5, .NET Core, REST / Web API, WPF, Blazor, SQL Server, PostgreSQL, RabbitMQ, Redis, Elasticsearch, Git, Azure Repos, Agile/Scrum |
+| **Built in projects** | Python, pandas, GeoPandas, SQLAlchemy, BigQuery, Looker Studio, Power BI, Claude API, FastAPI, pytest, GitHub Actions |
+| **Learning right now** | Machine learning (ReDI School AI/ML programme, 2026) |
 
-### Education
+### 🎓 Education
 
-- Master's degree in Computer Science
-- B.Tech / Engineering — India, 2021
-- Data Analytics programme — ReDI School of Digital Integration, Hamburg, 2026
+- **M.Sc. Computer Applications** — Veer Narmad South Gujarat University, Surat (2020–2022)
+- **B.Sc. Computer Applications** — Veer Narmad South Gujarat University, Surat (2017–2020)
+- **Data Analytics programme** — ReDI School of Digital Integration, Hamburg (2026)
 
-Languages: English (fluent), Hindi (native), German (B1)
+---
 
-### Contact
-
-[LinkedIn](https://www.linkedin.com/in/dhrupti-pambhar/) · [Email](mailto:dhrupti.pambhar1999@gmail.com)
+<p align="center">
+  <i>Open to backend, .NET and data/AI engineering roles across Germany. Let's talk:</i><br>
+  <a href="https://www.linkedin.com/in/dhrupti-pambhar/">LinkedIn</a> · <a href="mailto:dhrupti.pambhar1999@gmail.com">dhrupti.pambhar1999@gmail.com</a>
+</p>
