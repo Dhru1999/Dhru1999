@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 226" width="440" height="226" role="img" aria-label="Rooftop Solar, Hamburg: Where does Hamburg's rooftop solar capacity sit? A spatial join of the city's open data, district by district.">
+<style>text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;}</style>
+<rect x="1" y="1" width="438" height="224" rx="12" fill="#151b23" stroke="#3d444d"/>
+<rect x="1" y="1" width="6" height="224" rx="3" fill="#3fb950"/>
+<text x="24" y="32" font-size="10.5" font-weight="700" letter-spacing=".08em" fill="#3fb950">GEOSPATIAL · TEAM PROJECT</text>
+<text x="420" y="32" font-size="11" text-anchor="end" fill="#9198a1">Jun 2026</text>
+<text x="24" y="60" font-size="20" font-weight="700" fill="#e6edf3">Rooftop Solar, Hamburg</text>
+<text x="24" y="88" font-size="12.5" fill="#9198a1">Where does Hamburg's rooftop solar</text>
+<text x="24" y="106" font-size="12.5" fill="#9198a1">capacity sit? A spatial join of the</text>
+<text x="24" y="124" font-size="12.5" fill="#9198a1">city's open data, district by district.</text>
+<text x="416" y="104" font-size="30" font-weight="800" text-anchor="end" fill="#3fb950">384,908</text>
+<text x="416" y="122" font-size="10.5" text-anchor="end" fill="#9198a1">buildings joined</text>
+<text x="416" y="136" font-size="10.5" text-anchor="end" fill="#9198a1">to 104 districts</text>
+<line x1="24" y1="158" x2="416" y2="158" stroke="#3d444d"/>
+<text x="24" y="178" font-size="12" font-style="italic" fill="#e6edf3"><tspan font-weight="700" font-style="normal" fill="#3fb950">Lesson </tspan>Check what a join drops, not only what it keeps.</text>
+<rect x="24" y="192" width="54" height="20" rx="10" fill="none" stroke="#3d444d"/><text x="51" y="206" font-size="11" text-anchor="middle" fill="#9198a1" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">Python</text>
+<rect x="84.4" y="192" width="74" height="20" rx="10" fill="none" stroke="#3d444d"/><text x="121" y="206" font-size="11" text-anchor="middle" fill="#9198a1" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">GeoPandas</text>
+<rect x="164.0" y="192" width="99" height="20" rx="10" fill="none" stroke="#3d444d"/><text x="214" y="206" font-size="11" text-anchor="middle" fill="#9198a1" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">Looker Studio</text>
+</svg>

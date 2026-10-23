@@ -21,24 +21,9 @@ var dhrupti = new Engineer
 
 ## 🗺️ The route so far
 
-```mermaid
-%%{init: {'gitGraph': {'mainBranchName': 'journey', 'rotateCommitLabel': false}}}%%
-gitGraph TB:
-  commit id: "B.Sc. Computer Applications"
-  commit id: "M.Sc. Computer Applications"
-  branch casepoint
-  commit id: "Intern, led 10 interns"
-  commit id: "Associate Software Engineer"
-  commit id: "Excellence Award 2023"
-  checkout journey
-  merge casepoint id: "New city: Hamburg"
-  branch data
-  commit id: "SQL, BigQuery, dashboards"
-  commit id: "Mapping Hamburg's rooftops"
-  commit id: "Pipelines that refuse bad data"
-  checkout journey
-  merge data id: "Now: ML & LLM tools" type: HIGHLIGHT
-```
+<p align="center">
+  <picture><source media="(prefers-color-scheme: dark)" srcset="assets/journey-dark.svg"><img alt="Route map of my journey: Surat (B.Sc. and M.Sc. Computer Applications), Casepoint (intern, software engineer, Excellence Award 2023), a flight to Hamburg, ReDI School data analytics, a solar map, a follow-up tool with the Claude API, a retail ETL pipeline, a first ML model, and now AI/ML." src="assets/journey-light.svg" width="100%"></picture>
+</p>
 
 **Chapter 1 · Surat.** Bachelor's and Master's in Computer Applications at Veer Narmad South Gujarat University. That's where I learned to code, and where I found out I like the part *behind* the screen best.
 
@@ -58,45 +43,32 @@ gitGraph TB:
 + 0 rows lost · every change traceable
 ```
 
-**Chapter 3 · Hamburg.** A new city, a new language, and a new question: what happens to data *after* it leaves the database? At ReDI School I picked up Python, GeoPandas and BigQuery, and started building things in the open. They're all in the build log below.
+**Chapter 3 · Hamburg.** A new city, a new language, and a new question: what happens to data *after* it leaves the database? At ReDI School I picked up Python, GeoPandas and BigQuery, and started building things in the open. You'll find them all in the featured builds below.
 
 **Chapter 4 · Now.** Machine learning fundamentals in the ReDI School AI/ML programme, plus small tools that put LLMs to practical use.
 
-## 📓 Build log
+## 🧪 Featured builds
 
-Newest first. Each project comes with the one lesson I took from it.
+Click a card to open the project. Each one comes with the lesson it taught me.
 
-**Oct 2026 · [Mental Health Signal](https://github.com/Dhru1999/Teen-Mental-Health-Estimator)**  
-My first ML model behind an API: a scikit-learn pipeline served with FastAPI and a small web form. A learning project, not a screening tool.  
-💡 *Train R² 0.98, test R² 0.88. The gap between those two numbers is the whole story.*
+<p>
+  <a href="https://github.com/Dhru1999/Renewable-Solar-Potential-Across-Hamburg-District-Analysis"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/solar-dark.svg"><img alt="Rooftop Solar, Hamburg: 384,908 buildings joined to 104 districts. Python, GeoPandas, Looker Studio." src="assets/cards/solar-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Dhru1999/Auto-Follow-Up-Tool-Using-Claude-Code"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/followup-dark.svg"><img alt="Follow-Up Assistant: C# tool that drafts follow-up emails with the Claude API; nothing is sent without review." src="assets/cards/followup-light.svg" width="49%"></picture></a>
+</p>
+<p>
+  <a href="https://github.com/Dhru1999/smart-retail-data-platform"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/etl-dark.svg"><img alt="Smart Retail ETL: every row is loaded or quarantined with a reason. Python, pandas, PostgreSQL." src="assets/cards/etl-light.svg" width="49%"></picture></a>
+  <a href="https://github.com/Dhru1999/Teen-Mental-Health-Estimator"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/cards/ml-dark.svg"><img alt="Mental Health Signal: first ML model behind a FastAPI endpoint, R² 0.88 on held-out data." src="assets/cards/ml-light.svg" width="49%"></picture></a>
+</p>
 
-**Jul 2026 · [Smart Retail Data Platform](https://github.com/Dhru1999/smart-retail-data-platform)**  
-A small ETL pipeline built step by step, with daily notes, around one rule: *no row disappears quietly*.  
-💡 *A pipeline that loads 0 rows and reports "success" is worse than one that crashes.*
+<details>
+<summary><b>More from the log</b>: SQL, dashboards and early C# tools</summary>
 
-**Jun 2026 · [Job Application Follow-Up Assistant](https://github.com/Dhru1999/Auto-Follow-Up-Tool-Using-Claude-Code)**  
-A C# desktop tool that reads an Excel tracker, drafts follow-ups with the Claude API, and sends them only after I've reviewed them.  
-💡 *An `.xlsm` file is just a zip of XML. Reading it directly beats fighting a library.*
+- **May 2026 · [Social Media & Teen Mental Health](https://github.com/Dhru1999/Social-Media-Impact-on-Teen-Mental-Health)**: exploratory analysis of habits, sleep and stress in a 1,200-row public dataset. *EDA is mostly asking the next question.*
+- **Apr 2026 · [Sales & Customer Insights](https://github.com/Dhru1999/Sales-and-Customer-Report-Using-Looker-Studio)**: a Looker Studio dashboard over 10,000 transactions. *"No relationship between churn and spending" is a finding too.*
+- **Apr 2026 · [BigQuery SQL Analytics](https://github.com/Dhru1999/BigQuery-SQL-Analytics-thelook_ecommerce-)**: GoogleSQL practice with CTEs, window functions and aggregations. *Thinking in sets instead of loops.*
+- **2025 · [MultizipExtraction](https://github.com/Dhru1999/MultizipExtraction) · [CRUD with ASP.NET Core](https://github.com/Dhru1999/CrudOperationUsingNETCore)**: small C# tools and experiments. *Where this public log started.*
 
-**Jun 2026 · [Rooftop Solar Potential, Hamburg](https://github.com/Dhru1999/Renewable-Solar-Potential-Across-Hamburg-District-Analysis)**  
-A team project: 384,908 buildings spatially joined to 104 districts to see where the city's rooftop solar capacity sits.  
-💡 *383 buildings sat exactly on district borders. Check what a join drops, not only what it keeps.*
-
-**May 2026 · [Social Media & Teen Mental Health](https://github.com/Dhru1999/Social-Media-Impact-on-Teen-Mental-Health)**  
-Exploratory analysis of habits, sleep and stress in a 1,200-row public dataset.  
-💡 *EDA is mostly asking the next question.*
-
-**Apr 2026 · [Sales & Customer Insights](https://github.com/Dhru1999/Sales-and-Customer-Report-Using-Looker-Studio)**  
-A Looker Studio dashboard over 10,000 transactions.  
-💡 *"No relationship between churn and spending" is a finding too.*
-
-**Apr 2026 · [BigQuery SQL Analytics](https://github.com/Dhru1999/BigQuery-SQL-Analytics-thelook_ecommerce-)**  
-GoogleSQL practice on an e-commerce dataset: CTEs, window functions, aggregations.  
-💡 *Thinking in sets instead of loops.*
-
-**2025 · [MultizipExtraction](https://github.com/Dhru1999/MultizipExtraction) · [CRUD with ASP.NET Core](https://github.com/Dhru1999/CrudOperationUsingNETCore)**  
-Small C# tools and experiments.  
-💡 *Where this public log started.*
+</details>
 
 ## 🧰 Toolbox
 
