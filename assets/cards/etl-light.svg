@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 226" width="440" height="226" role="img" aria-label="Smart Retail ETL: A pipeline built around one rule: no row disappears quietly. Every reject is saved with its reason.">
+<style>text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;}</style>
+<rect x="1" y="1" width="438" height="224" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="1" y="1" width="6" height="224" rx="3" fill="#1a7f37"/>
+<text x="24" y="32" font-size="10.5" font-weight="700" letter-spacing=".08em" fill="#1a7f37">DATA ENGINEERING</text>
+<text x="420" y="32" font-size="11" text-anchor="end" fill="#59636e">Jul 2026</text>
+<text x="24" y="60" font-size="20" font-weight="700" fill="#1f2328">Smart Retail ETL</text>
+<text x="24" y="88" font-size="12.5" fill="#59636e">A pipeline built around one rule:</text>
+<text x="24" y="106" font-size="12.5" fill="#59636e">no row disappears quietly. Every</text>
+<text x="24" y="124" font-size="12.5" fill="#59636e">reject is saved with its reason.</text>
+<text x="416" y="104" font-size="30" font-weight="800" text-anchor="end" fill="#1a7f37">14 + 3</text>
+<text x="416" y="122" font-size="10.5" text-anchor="end" fill="#59636e">loaded + quarantined</text>
+<text x="416" y="136" font-size="10.5" text-anchor="end" fill="#59636e">= all 17 rows in</text>
+<line x1="24" y1="158" x2="416" y2="158" stroke="#d0d7de"/>
+<text x="24" y="178" font-size="12" font-style="italic" fill="#1f2328"><tspan font-weight="700" font-style="normal" fill="#1a7f37">Lesson </tspan>Silent success is worse than a loud crash.</text>
+<rect x="24" y="192" width="54" height="20" rx="10" fill="none" stroke="#d0d7de"/><text x="51" y="206" font-size="11" text-anchor="middle" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">Python</text>
+<rect x="84.4" y="192" width="54" height="20" rx="10" fill="none" stroke="#d0d7de"/><text x="112" y="206" font-size="11" text-anchor="middle" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">pandas</text>
+<rect x="144.8" y="192" width="80" height="20" rx="10" fill="none" stroke="#d0d7de"/><text x="185" y="206" font-size="11" text-anchor="middle" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">PostgreSQL</text>
+<rect x="230.8" y="192" width="54" height="20" rx="10" fill="none" stroke="#d0d7de"/><text x="258" y="206" font-size="11" text-anchor="middle" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">pytest</text>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 226" width="440" height="226" role="img" aria-label="Mental Health Signal: My first model behind an API: a scikit-learn pipeline served with FastAPI. A learning project.">
+<style>text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;}</style>
+<rect x="1" y="1" width="438" height="224" rx="12" fill="#f6f8fa" stroke="#d0d7de"/>
+<rect x="1" y="1" width="6" height="224" rx="3" fill="#8250df"/>
+<text x="24" y="32" font-size="10.5" font-weight="700" letter-spacing=".08em" fill="#8250df">MACHINE LEARNING</text>
+<text x="420" y="32" font-size="11" text-anchor="end" fill="#59636e">Oct 2026</text>
+<text x="24" y="60" font-size="20" font-weight="700" fill="#1f2328">Mental Health Signal</text>
+<text x="24" y="88" font-size="12.5" fill="#59636e">My first model behind an API: a</text>
+<text x="24" y="106" font-size="12.5" fill="#59636e">scikit-learn pipeline served with</text>
+<text x="24" y="124" font-size="12.5" fill="#59636e">FastAPI. A learning project.</text>
+<text x="416" y="104" font-size="30" font-weight="800" text-anchor="end" fill="#8250df">0.88</text>
+<text x="416" y="122" font-size="10.5" text-anchor="end" fill="#59636e">R² on held-out</text>
+<text x="416" y="136" font-size="10.5" text-anchor="end" fill="#59636e">test data</text>
+<line x1="24" y1="158" x2="416" y2="158" stroke="#d0d7de"/>
+<text x="24" y="178" font-size="12" font-style="italic" fill="#1f2328"><tspan font-weight="700" font-style="normal" fill="#8250df">Lesson </tspan>Train 0.98 vs test 0.88: the gap is the story.</text>
+<rect x="24" y="192" width="93" height="20" rx="10" fill="none" stroke="#d0d7de"/><text x="70" y="206" font-size="11" text-anchor="middle" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">scikit-learn</text>
+<rect x="122.80000000000001" y="192" width="61" height="20" rx="10" fill="none" stroke="#d0d7de"/><text x="153" y="206" font-size="11" text-anchor="middle" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">FastAPI</text>
+<rect x="189.60000000000002" y="192" width="80" height="20" rx="10" fill="none" stroke="#d0d7de"/><text x="230" y="206" font-size="11" text-anchor="middle" fill="#59636e" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace">JavaScript</text>
+</svg>
