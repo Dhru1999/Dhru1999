@@ -3,8 +3,6 @@
   <img alt="Dhrupti Pambhar. From production backends to pipelines and models: a learning log, kept in public. C#/.NET engineer, Surat to Hamburg, exploring data and AI. 2+ years of C#/.NET in production, 10+ GB of documents a day, 384,908 buildings mapped, R² 0.88 on a first model." src="assets/hero-light.svg" width="100%">
 </picture>
 
----
-
 ```csharp
 var dhrupti = new Engineer
 {
