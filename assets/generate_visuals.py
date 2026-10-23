@@ -1,6 +1,6 @@
-"""Generate the journey map and project cards (light + dark) for the profile README.
+"""Generate the hero banner, journey map and project cards (light + dark) for the profile README.
 
-Edit STOPS (journey) or CARDS (projects) below, then run from the repo root:
+Edit HERO_* (banner), STOPS (journey) or CARDS (projects) below, then run from the repo root:
     python assets/generate_visuals.py assets
 No dependencies beyond the Python standard library.
 """
@@ -172,7 +172,108 @@ def card(cd, t):
     return "\n".join(out)
 
 
+# ── Hero banner ──────────────────────────────────────────────────────────
+HW, HH = 920, 330
+HERO_NAME = "Dhrupti Pambhar"
+HERO_TAGLINE = "From production backends to pipelines and models: a learning log, kept in public."
+# The rotating line: "I turn <from> → <to>", one pair every few seconds.
+HERO_TURNS = [
+    ("slow queries", "fast ones", "work"),
+    ("messy data", "honest pipelines", "data"),
+    ("notebooks", "tested code", "edu"),
+    ("data", "models", "ai"),
+]
+HERO_STATS = [  # (number, label, colour key)
+    ("2+ yrs", "C#/.NET in production", "work"),
+    ("10+ GB", "documents a day", "work"),
+    ("384,908", "buildings mapped", "data"),
+    ("R² 0.88", "first model", "ai"),
+]
+HERO_ROUTE = [  # (x, label, colour key, kind)
+    (70, "Surat", "edu", "city"),
+    (330, "Hamburg", "data", "city"),
+    (560, "now: data & AI", "ai", "now"),
+]
+
+
+def hero(t):
+    c = THEMES[t]
+    n = len(HERO_TURNS)
+    cycle = 3.2 * n
+    slot = 100 / n
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {HW} {HH}" width="{HW}" height="{HH}" '
+           f'role="img" aria-label="{esc(HERO_NAME)}. {esc(HERO_TAGLINE)} C#/.NET engineer, Surat to Hamburg, exploring data and AI.">',
+           '<defs>',
+           f'<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="{c["card"]}"/>'
+           f'<stop offset="1" stop-color="{c["bg"]}"/></linearGradient>',
+           f'<linearGradient id="name" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="{c["edu"]}"/>'
+           f'<stop offset=".5" stop-color="{c["ai"]}"/><stop offset="1" stop-color="{c["data"]}"/></linearGradient>',
+           f'<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="{c["track"]}" opacity=".55"/></pattern>',
+           '</defs>',
+           f'<style>text{{font-family:{FONT};}} .mono{{font-family:{MONO};}}'
+           f' .turn{{opacity:0;animation:turn {cycle}s infinite;}}'
+           f' @keyframes turn{{0%{{opacity:0;transform:translateY(10px)}} {slot*0.12:.1f}%{{opacity:1;transform:translateY(0)}}'
+           f' {slot*0.85:.1f}%{{opacity:1;transform:translateY(0)}} {slot*0.97:.1f}%{{opacity:0;transform:translateY(-8px)}} 100%{{opacity:0}}}}'
+           ' .caret{animation:blink 1s steps(1) infinite} @keyframes blink{50%{opacity:0}}'
+           ' .rise{opacity:0;animation:rise .8s ease-out forwards}'
+           ' @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}'
+           ' @media (prefers-reduced-motion: reduce){.turn{animation:none} .turn.first{opacity:1} .caret,.rise{animation:none;opacity:1} .anim{display:none}}'
+           '</style>',
+           f'<rect x="1" y="1" width="{HW-2}" height="{HH-2}" rx="18" fill="url(#bg)" stroke="{c["border"]}"/>',
+           f'<rect x="1" y="1" width="{HW-2}" height="{HH-2}" rx="18" fill="url(#dots)"/>']
+
+    # kicker
+    out.append(f'<text class="mono rise" x="44" y="52" font-size="13" fill="{c["muted"]}">'
+               f'<tspan fill="{c["data"]}">~/dhrupti</tspan> $ git log --since=2017 --oneline</text>')
+    # name
+    out.append(f'<text class="rise" style="animation-delay:.15s" x="42" y="112" font-size="54" font-weight="800" '
+               f'letter-spacing="-1" fill="url(#name)">{esc(HERO_NAME)}</text>')
+    # rotating line
+    out.append(f'<text x="44" y="158" font-size="24" font-weight="600" fill="{c["text"]}">I turn</text>')
+    for i, (frm, to, key) in enumerate(HERO_TURNS):
+        cls = "turn first" if i == 0 else "turn"
+        out.append(f'<text class="{cls}" style="animation-delay:{i * 3.2}s" x="122" y="158" font-size="24" font-weight="600">'
+                   f'<tspan fill="{c["muted"]}">{esc(frm)}</tspan><tspan fill="{c["muted"]}"> → </tspan>'
+                   f'<tspan fill="{c[key]}">{esc(to)}</tspan><tspan class="caret" fill="{c[key]}" font-weight="300"> |</tspan></text>')
+    # tagline
+    out.append(f'<text class="rise" style="animation-delay:.35s" x="44" y="192" font-size="15" fill="{c["muted"]}">{esc(HERO_TAGLINE)}</text>')
+
+    # stats
+    x = 44
+    for num, label, key in HERO_STATS:
+        w = max(len(num) * 11.5, len(label) * 6.6) + 28
+        out.append(f'<g class="rise" style="animation-delay:.5s">'
+                   f'<rect x="{x:.0f}" y="212" width="{w:.0f}" height="50" rx="10" fill="{c["bg"]}" stroke="{c["border"]}"/>'
+                   f'<text x="{x + 14:.0f}" y="235" font-size="18" font-weight="800" fill="{c[key]}">{esc(num)}</text>'
+                   f'<text x="{x + 14:.0f}" y="252" font-size="11.5" fill="{c["muted"]}">{esc(label)}</text></g>')
+        x += w + 10
+
+    # mini route along the bottom
+    ry = 296
+    x0, x1 = HERO_ROUTE[0][0], HERO_ROUTE[-1][0]
+    out.append(f'<path d="M{x0} {ry} H{HERO_ROUTE[1][0]}" stroke="{c["edu"]}" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>')
+    out.append(f'<text x="{(x0 + HERO_ROUTE[1][0]) / 2:.0f}" y="{ry + 5}" text-anchor="middle" font-size="15" fill="{c["flight"]}">&#9992;</text>')
+    out.append(f'<path d="M{HERO_ROUTE[1][0]} {ry} H{x1}" stroke="{c["data"]}" stroke-width="3" stroke-linecap="round"/>')
+    out.append(f'<path d="M{x1} {ry} H{x1 + 40}" stroke="{c["ai"]}" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round" opacity=".7"/>')
+    out.append(f'<circle class="anim" r="4" fill="{c["text"]}"><animateMotion dur="7s" repeatCount="indefinite" path="M{x0} {ry} H{x1 + 40}"/>'
+               '<animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="7s" repeatCount="indefinite"/></circle>')
+    for rx, label, key, kind in HERO_ROUTE:
+        if kind == "now":
+            out.append(f'<circle class="anim" cx="{rx}" cy="{ry}" r="7" fill="none" stroke="{c[key]}" stroke-width="2">'
+                       '<animate attributeName="r" values="7;16" dur="2s" repeatCount="indefinite"/>'
+                       '<animate attributeName="opacity" values=".9;0" dur="2s" repeatCount="indefinite"/></circle>')
+            out.append(f'<circle cx="{rx}" cy="{ry}" r="7" fill="{c[key]}"/>')
+        else:
+            out.append(f'<circle cx="{rx}" cy="{ry}" r="7" fill="{c["bg"]}" stroke="{c[key]}" stroke-width="3.5"/>')
+        out.append(f'<text x="{rx + 14}" y="{ry - 10}" font-size="12" font-weight="600" fill="{c["text"]}">{esc(label)}</text>')
+    out.append(f'<text x="{HW - 40}" y="{ry + 4}" text-anchor="end" font-size="12.5" fill="{c["muted"]}">'
+               'C#/.NET engineer · exploring data &amp; AI</text>')
+    out.append('</svg>')
+    return "\n".join(out)
+
+
 for theme in THEMES:
+    (OUT / f"hero-{theme}.svg").write_text(hero(theme), encoding="utf-8")
     (OUT / f"journey-{theme}.svg").write_text(journey(theme), encoding="utf-8")
     for cd in CARDS:
         (OUT / "cards" / f"{cd['slug']}-{theme}.svg").write_text(card(cd, theme), encoding="utf-8")

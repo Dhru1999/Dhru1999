@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 330" width="920" height="330" role="img" aria-label="Dhrupti Pambhar. From production backends to pipelines and models: a learning log, kept in public. C#/.NET engineer, Surat to Hamburg, exploring data and AI.">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6f8fa"/><stop offset="1" stop-color="#ffffff"/></linearGradient>
+<linearGradient id="name" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#0969da"/><stop offset=".5" stop-color="#8250df"/><stop offset="1" stop-color="#1a7f37"/></linearGradient>
+<pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#d0d7de" opacity=".55"/></pattern>
+</defs>
+<style>text{font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;} .mono{font-family:ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;} .turn{opacity:0;animation:turn 12.8s infinite;} @keyframes turn{0%{opacity:0;transform:translateY(10px)} 3.0%{opacity:1;transform:translateY(0)} 21.2%{opacity:1;transform:translateY(0)} 24.2%{opacity:0;transform:translateY(-8px)} 100%{opacity:0}} .caret{animation:blink 1s steps(1) infinite} @keyframes blink{50%{opacity:0}} .rise{opacity:0;animation:rise .8s ease-out forwards} @keyframes rise{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}} @media (prefers-reduced-motion: reduce){.turn{animation:none} .turn.first{opacity:1} .caret,.rise{animation:none;opacity:1} .anim{display:none}}</style>
+<rect x="1" y="1" width="918" height="328" rx="18" fill="url(#bg)" stroke="#d0d7de"/>
+<rect x="1" y="1" width="918" height="328" rx="18" fill="url(#dots)"/>
+<text class="mono rise" x="44" y="52" font-size="13" fill="#59636e"><tspan fill="#1a7f37">~/dhrupti</tspan> $ git log --since=2017 --oneline</text>
+<text class="rise" style="animation-delay:.15s" x="42" y="112" font-size="54" font-weight="800" letter-spacing="-1" fill="url(#name)">Dhrupti Pambhar</text>
+<text x="44" y="158" font-size="24" font-weight="600" fill="#1f2328">I turn</text>
+<text class="turn first" style="animation-delay:0.0s" x="122" y="158" font-size="24" font-weight="600"><tspan fill="#59636e">slow queries</tspan><tspan fill="#59636e"> → </tspan><tspan fill="#bf8700">fast ones</tspan><tspan class="caret" fill="#bf8700" font-weight="300"> |</tspan></text>
+<text class="turn" style="animation-delay:3.2s" x="122" y="158" font-size="24" font-weight="600"><tspan fill="#59636e">messy data</tspan><tspan fill="#59636e"> → </tspan><tspan fill="#1a7f37">honest pipelines</tspan><tspan class="caret" fill="#1a7f37" font-weight="300"> |</tspan></text>
+<text class="turn" style="animation-delay:6.4s" x="122" y="158" font-size="24" font-weight="600"><tspan fill="#59636e">notebooks</tspan><tspan fill="#59636e"> → </tspan><tspan fill="#0969da">tested code</tspan><tspan class="caret" fill="#0969da" font-weight="300"> |</tspan></text>
+<text class="turn" style="animation-delay:9.600000000000001s" x="122" y="158" font-size="24" font-weight="600"><tspan fill="#59636e">data</tspan><tspan fill="#59636e"> → </tspan><tspan fill="#8250df">models</tspan><tspan class="caret" fill="#8250df" font-weight="300"> |</tspan></text>
+<text class="rise" style="animation-delay:.35s" x="44" y="192" font-size="15" fill="#59636e">From production backends to pipelines and models: a learning log, kept in public.</text>
+<g class="rise" style="animation-delay:.5s"><rect x="44" y="212" width="167" height="50" rx="10" fill="#ffffff" stroke="#d0d7de"/><text x="58" y="235" font-size="18" font-weight="800" fill="#bf8700">2+ yrs</text><text x="58" y="252" font-size="11.5" fill="#59636e">C#/.NET in production</text></g>
+<g class="rise" style="animation-delay:.5s"><rect x="221" y="212" width="127" height="50" rx="10" fill="#ffffff" stroke="#d0d7de"/><text x="235" y="235" font-size="18" font-weight="800" fill="#bf8700">10+ GB</text><text x="235" y="252" font-size="11.5" fill="#59636e">documents a day</text></g>
+<g class="rise" style="animation-delay:.5s"><rect x="358" y="212" width="134" height="50" rx="10" fill="#ffffff" stroke="#d0d7de"/><text x="372" y="235" font-size="18" font-weight="800" fill="#1a7f37">384,908</text><text x="372" y="252" font-size="11.5" fill="#59636e">buildings mapped</text></g>
+<g class="rise" style="animation-delay:.5s"><rect x="501" y="212" width="108" height="50" rx="10" fill="#ffffff" stroke="#d0d7de"/><text x="515" y="235" font-size="18" font-weight="800" fill="#8250df">R² 0.88</text><text x="515" y="252" font-size="11.5" fill="#59636e">first model</text></g>
+<path d="M70 296 H330" stroke="#0969da" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round"/>
+<text x="200" y="301" text-anchor="middle" font-size="15" fill="#8c959f">&#9992;</text>
+<path d="M330 296 H560" stroke="#1a7f37" stroke-width="3" stroke-linecap="round"/>
+<path d="M560 296 H600" stroke="#8250df" stroke-width="3" stroke-dasharray="2 9" stroke-linecap="round" opacity=".7"/>
+<circle class="anim" r="4" fill="#1f2328"><animateMotion dur="7s" repeatCount="indefinite" path="M70 296 H600"/><animate attributeName="opacity" values="0;1;1;0" keyTimes="0;.1;.85;1" dur="7s" repeatCount="indefinite"/></circle>
+<circle cx="70" cy="296" r="7" fill="#ffffff" stroke="#0969da" stroke-width="3.5"/>
+<text x="84" y="286" font-size="12" font-weight="600" fill="#1f2328">Surat</text>
+<circle cx="330" cy="296" r="7" fill="#ffffff" stroke="#1a7f37" stroke-width="3.5"/>
+<text x="344" y="286" font-size="12" font-weight="600" fill="#1f2328">Hamburg</text>
+<circle class="anim" cx="560" cy="296" r="7" fill="none" stroke="#8250df" stroke-width="2"><animate attributeName="r" values="7;16" dur="2s" repeatCount="indefinite"/><animate attributeName="opacity" values=".9;0" dur="2s" repeatCount="indefinite"/></circle>
+<circle cx="560" cy="296" r="7" fill="#8250df"/>
+<text x="574" y="286" font-size="12" font-weight="600" fill="#1f2328">now: data &amp; AI</text>
+<text x="880" y="300" text-anchor="end" font-size="12.5" fill="#59636e">C#/.NET engineer · exploring data &amp; AI</text>
+</svg>
