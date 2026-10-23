@@ -64,18 +64,39 @@ gitGraph TB:
 
 ## 📓 Build log
 
-Each project, and the one lesson I took from it:
+Newest first. Each project comes with the one lesson I took from it.
 
-| When | Project | What it is | What it taught me |
-|---|---|---|---|
-| Oct 2026 | **[Mental Health Signal](https://github.com/Dhru1999/Teen-Mental-Health-Estimator)** | My first ML model behind an API: a scikit-learn pipeline served with FastAPI and a small web form. A learning project, not a screening tool. | Train R² 0.98, test R² 0.88. The gap between those two numbers is the whole story. |
-| Jul 2026 | **[Smart Retail Data Platform](https://github.com/Dhru1999/smart-retail-data-platform)** | A small ETL pipeline built step by step, with daily notes, around one rule: *no row disappears quietly*. | A pipeline that loads 0 rows and reports "success" is worse than one that crashes. |
-| Jun 2026 | **[Job Application Follow-Up Assistant](https://github.com/Dhru1999/Auto-Follow-Up-Tool-Using-Claude-Code)** | A C# desktop tool that reads an Excel tracker, drafts follow-ups with the Claude API, and sends them only after I've reviewed them. | An `.xlsm` file is just a zip of XML. Reading it directly beats fighting a library. |
-| Jun 2026 | **[Rooftop Solar Potential, Hamburg](https://github.com/Dhru1999/Renewable-Solar-Potential-Across-Hamburg-District-Analysis)** | A team project: 384,908 buildings spatially joined to 104 districts to see where the city's rooftop solar capacity sits. | 383 buildings sat exactly on district borders. Check what a join *drops*, not only what it keeps. |
-| May 2026 | **[Social Media & Teen Mental Health](https://github.com/Dhru1999/Social-Media-Impact-on-Teen-Mental-Health)** | Exploratory analysis of habits, sleep and stress in a 1,200-row public dataset. | EDA is mostly asking the next question. |
-| Apr 2026 | **[Sales & Customer Insights](https://github.com/Dhru1999/Sales-and-Customer-Report-Using-Looker-Studio)** | A Looker Studio dashboard over 10,000 transactions. | "No relationship between churn and spending" is a finding too. |
-| Apr 2026 | **[BigQuery SQL Analytics](https://github.com/Dhru1999/BigQuery-SQL-Analytics-thelook_ecommerce-)** | GoogleSQL practice on an e-commerce dataset: CTEs, window functions, aggregations. | Thinking in sets instead of loops. |
-| 2025 | [MultizipExtraction](https://github.com/Dhru1999/MultizipExtraction) · [CRUD with ASP.NET Core](https://github.com/Dhru1999/CrudOperationUsingNETCore) | Small C# tools and experiments. | Where this public log started. |
+**Oct 2026 · [Mental Health Signal](https://github.com/Dhru1999/Teen-Mental-Health-Estimator)**  
+My first ML model behind an API: a scikit-learn pipeline served with FastAPI and a small web form. A learning project, not a screening tool.  
+💡 *Train R² 0.98, test R² 0.88. The gap between those two numbers is the whole story.*
+
+**Jul 2026 · [Smart Retail Data Platform](https://github.com/Dhru1999/smart-retail-data-platform)**  
+A small ETL pipeline built step by step, with daily notes, around one rule: *no row disappears quietly*.  
+💡 *A pipeline that loads 0 rows and reports "success" is worse than one that crashes.*
+
+**Jun 2026 · [Job Application Follow-Up Assistant](https://github.com/Dhru1999/Auto-Follow-Up-Tool-Using-Claude-Code)**  
+A C# desktop tool that reads an Excel tracker, drafts follow-ups with the Claude API, and sends them only after I've reviewed them.  
+💡 *An `.xlsm` file is just a zip of XML. Reading it directly beats fighting a library.*
+
+**Jun 2026 · [Rooftop Solar Potential, Hamburg](https://github.com/Dhru1999/Renewable-Solar-Potential-Across-Hamburg-District-Analysis)**  
+A team project: 384,908 buildings spatially joined to 104 districts to see where the city's rooftop solar capacity sits.  
+💡 *383 buildings sat exactly on district borders. Check what a join drops, not only what it keeps.*
+
+**May 2026 · [Social Media & Teen Mental Health](https://github.com/Dhru1999/Social-Media-Impact-on-Teen-Mental-Health)**  
+Exploratory analysis of habits, sleep and stress in a 1,200-row public dataset.  
+💡 *EDA is mostly asking the next question.*
+
+**Apr 2026 · [Sales & Customer Insights](https://github.com/Dhru1999/Sales-and-Customer-Report-Using-Looker-Studio)**  
+A Looker Studio dashboard over 10,000 transactions.  
+💡 *"No relationship between churn and spending" is a finding too.*
+
+**Apr 2026 · [BigQuery SQL Analytics](https://github.com/Dhru1999/BigQuery-SQL-Analytics-thelook_ecommerce-)**  
+GoogleSQL practice on an e-commerce dataset: CTEs, window functions, aggregations.  
+💡 *Thinking in sets instead of loops.*
+
+**2025 · [MultizipExtraction](https://github.com/Dhru1999/MultizipExtraction) · [CRUD with ASP.NET Core](https://github.com/Dhru1999/CrudOperationUsingNETCore)**  
+Small C# tools and experiments.  
+💡 *Where this public log started.*
 
 ## 🧰 Toolbox
 
